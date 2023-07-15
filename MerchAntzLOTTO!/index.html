@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lottery Interface</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lottery Game</h1>
+        <p>Place your bet and try your luck!</p>
+        <form id="lotteryForm">
+            <input type="number" id="betAmount" placeholder="Enter bet amount">
+            <button type="submit">Place Bet</button>
+        </form>
+        <div id="result" class="hidden">
+            <h3>Lottery Result:</h3>
+            <p id="winnerAddress"></p>
+            <p id="winnerAmount"></p>
+        </div>
+        <div class="ticket"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
